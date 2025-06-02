@@ -9,6 +9,7 @@ import Tour2 from "@/components/homes/tours/Tour2";
 import TourSlider5 from "@/components/homes/tours/TourSlider5";
 import FooterSeven from "@/components/layout/footers/FooterSeven";
 import Header8 from "@/components/layout/header/Header8";
+import Header9 from "@/components/layout/header/Header9";
 import Leaders from "@/components/section/Leaders";
 import React from "react";
 
@@ -21,7 +22,7 @@ export default function page() {
   return (
     <>
       <main>
-        <Header8 />
+        <Header9 />
         <Hero9 />
         <Destinations8 />
         <TourSlider5 />

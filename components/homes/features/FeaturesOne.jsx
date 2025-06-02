@@ -22,7 +22,7 @@ export default function FeaturesOne() {
           {featuresFour.map((elm, i) => (
             <div key={i} className="col-lg-3 col-sm-6">
               <div className="featureIcon -type-1 pr-40 md:pr-0">
-                <div className="featureIcon__icon">
+                <div className="featureIcon__icon d-flex justify-content-center">
                   <Image width={60} height={60} src={elm.iconSrc} alt="icon" />
                 </div>
 
