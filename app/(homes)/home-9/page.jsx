@@ -9,6 +9,7 @@ import Tour2 from "@/components/homes/tours/Tour2";
 import TourSlider5 from "@/components/homes/tours/TourSlider5";
 import FooterSeven from "@/components/layout/footers/FooterSeven";
 import Header8 from "@/components/layout/header/Header8";
+import Leaders from "@/components/section/Leaders";
 import React from "react";
 
 export const metadata = {
@@ -28,9 +29,10 @@ export default function page() {
         <DestinationsThree />
         <div style={{ marginTop: "120px" }}>
           <Features7 />
-          <Tour2 />
-          <TestimonialsFive />
-          <ArticlesOne />
+          {/* <Tour2 /> */}
+          {/* <TestimonialsFive /> */}
+          {/* <ArticlesOne /> */}
+          <Leaders />
           <FooterSeven />
         </div>
       </main>

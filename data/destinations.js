@@ -198,37 +198,37 @@ export const destinationsThree = [
 export const destinationsFour = [
   {
     id: 1,
-    title: "City Tours",
+    title: "LED Bulbs",
     image: "/img/destinationCards/3/1.jpg",
-    count: 100, // change the count to a number type
+    count: 100, 
   },
   {
     id: 2,
-    title: "Cultural Tours",
+    title: "Panel Lights",
     image: "/img/destinationCards/3/2.jpg",
     count: 100,
   },
   {
     id: 3,
-    title: "Day Cruises",
+    title: "Street Lights",
     image: "/img/destinationCards/3/3.jpg",
     count: 100,
   },
   {
     id: 4,
-    title: "Bus Tours",
+    title: "Flood Lights",
     image: "/img/destinationCards/3/4.jpg",
     count: 100,
   },
   {
     id: 5,
-    title: "Beach Tours",
+    title: "Smart Lighting",
     image: "/img/destinationCards/3/5.jpg",
     count: 100,
   },
   {
     id: 6,
-    title: "Food Tours",
+    title: "Decorative Lights",
     image: "/img/destinationCards/3/6.jpg",
     count: 100,
   },
@@ -584,52 +584,52 @@ export const regions = [
 export const destinations11 = [
   {
     id: 1,
-    name: "Paris",
+    name: "Consumer",
     imageSrc: "/img/features/6/1.jpg",
     toursCount: 100,
   },
   {
     id: 2,
-    name: "Singapore",
+    name: "Commercial & Architectural",
     imageSrc: "/img/features/6/2.jpg",
     toursCount: 300,
   },
   {
     id: 3,
-    name: "Roma",
+    name: "Industrial",
     imageSrc: "/img/features/6/3.jpg",
     toursCount: 400,
   },
   {
     id: 4,
-    name: "Bangkok",
+    name: "Solar Offgrid",
     imageSrc: "/img/features/6/4.jpg",
     toursCount: 100,
   },
   {
     id: 5,
-    name: "Bali",
+    name: "Industrial Applications",
     imageSrc: "/img/features/6/5.jpg",
     toursCount: 600,
   },
-  {
-    id: 6,
-    name: "Phuket",
-    imageSrc: "/img/features/6/6.jpg",
-    toursCount: 200,
-  },
-  {
-    id: 7,
-    name: "Tokyo",
-    imageSrc: "/img/features/6/7.jpg",
-    toursCount: 700,
-  },
-  {
-    id: 8,
-    name: "Cappadocia",
-    imageSrc: "/img/features/6/8.jpg",
-    toursCount: 900,
-  },
+  // {
+  //   id: 6,
+  //   name: "Phuket",
+  //   imageSrc: "/img/features/6/6.jpg",
+  //   toursCount: 200,
+  // },
+  // {
+  //   id: 7,
+  //   name: "Tokyo",
+  //   imageSrc: "/img/features/6/7.jpg",
+  //   toursCount: 700,
+  // },
+  // {
+  //   id: 8,
+  //   name: "Cappadocia",
+  //   imageSrc: "/img/features/6/8.jpg",
+  //   toursCount: 900,
+  // },
 ];
 
 export const tagData = [

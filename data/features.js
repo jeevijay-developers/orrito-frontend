@@ -1,4 +1,4 @@
-export const features = [
+export const featuresFour = [
   {
     id: 1,
     iconSrc: "/img/icons/1/ticket.svg",
@@ -24,25 +24,54 @@ export const features = [
     text: "New price? New plan? No problem. We're here to help, 24/7.",
   },
 ];
-export const featuresFour = [
-  {
-    id: 1,
-    iconSrc: "/img/icons/1/ticket.svg",
-    title: "Ultimate flexibility",
-    text: "You’re in control, with free cancellation and payment.",
+export const competitiveAdvantages = [
+    {
+      id: 1,
+      title: "Backward Integration",
+      items: [
+        "Inhouse Manufacturing",
+        "Complete Quality & Cost Control",
+        "On Time Delivery (OTD)",
+        "Experienced Team with decades of prior experience in same sector"
+      ],
+      iconSrc: "/img/icons/1/1.svg",
+    position: "top-left"
   },
   {
     id: 2,
-    iconSrc: "/img/icons/1/hot-air-balloon.svg",
-    title: "Memorable experiences",
-    text: "Browse and book tours and activities so incredible.",
+    title: "Innovative R&D",
+    items: [
+      "Continuous improvement & New Designs",
+      "Smart integration with IoT and automation systems",
+      "Cutting-edge thermal and optical engineering",
+      "Development of longer-lasting LED chips",
+    ],
+    iconSrc: "/img/icons/1/2.svg",
+    position: "top-right"
   },
   {
     id: 3,
-    iconSrc: "/img/icons/1/diamond.svg",
-    title: "Quality at our core",
-    text: "High quality standards. Millions of reviews.",
-  },
+    title: "Customer Centric Approach",
+      items: [
+        "Reliable Products with exceptional service",
+        "Ability to invest to meet growing customer needs",
+        "Exceptional After sales service",
+        "Simplified warranty management process"
+      ],
+      iconSrc: "/img/icons/1/3.svg",
+      position: "bottom-left"
+    },
+    {
+      id: 4,
+      title: "Sustainability",
+      items: [
+        "Commitment to energy Efficient Solutions",
+        "Strategically located at Central India Mahdya Pradesh for ON Time deliveries and Lesser Lead times",
+        "Optimized supply chain for faster dispatch and reduced costs"
+      ],
+      iconSrc: "/img/icons/1/4.svg",
+      position: "bottom-right"
+    }
 ];
 export const featuresTwo = [
   {
@@ -68,28 +97,52 @@ export const featuresTwo = [
 export const featuresThree = [
   {
     id: 1,
-    icon: "/img/icons/3/1.svg",
-    value: "932M",
-    text: "Total Donations",
+    quarter: "2021 Q2",
+    title: "Laying the Foundation Stone",
+    subtitle: "Acquired 24000 Sqft Industrial land in Mandideep",
+    iconClass: "gear",
+    position: "top"
   },
   {
     id: 2,
-    icon: "/img/icons/3/2.svg",
-    value: "24M",
-    text: "Campaigns Closed",
+    quarter: "2021 Q3",
+    title: "Project Initiation",
+    subtitle: "Project initiated during COVID",
+    iconClass: "building",
+    position: "bottom"
   },
   {
     id: 3,
-    icon: "/img/icons/3/3.svg",
-    value: "10M",
-    text: "Happy People",
+    quarter: "2022 Q3",
+    title: "Project Commissioned",
+    subtitle: "First fully backward integrated facility commissioned",
+    iconClass: "handshake",
+    position: "top"
   },
   {
     id: 4,
-    icon: "/img/icons/3/4.svg",
-    value: "65M",
-    text: "Our Volunteers",
+    quarter: "2023 Q1",
+    title: "First OEM",
+    subtitle: "Signed first OEM client for LED T-5 battens",
+    iconClass: "gears",
+    position: "bottom"
   },
+  {
+    id: 5,
+    quarter: "2023 Q3",
+    title: "Distribution Expanded",
+    subtitle: "Expanded distribution to Bhopal, Ujjain and Lucknow",
+    iconClass: "network",
+    position: "top"
+  },
+  {
+    id: 6,
+    quarter: "2024 Q1",
+    title: "Market Outreach",
+    subtitle: "Expanded OEM operations and market outreach",
+    iconClass: "location",
+    position: "bottom"
+  }
 ];
 
 export const featuresFive = [
