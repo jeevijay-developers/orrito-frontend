@@ -10,7 +10,7 @@ export default function DestinationsThree() {
         <div className="row justify-between items-end y-gap-10">
           <div className="col-auto">
             <h2 data-aos="fade-up" data-aos-delay="" className="text-30">
-              Popular things to do
+              Popular things to buy
             </h2>
           </div>
 
@@ -46,7 +46,7 @@ export default function DestinationsThree() {
 
                 <div className="featureCard__content text-center">
                   <h4 className="text-white text-18">{elm.title}</h4>
-                  <div className="text-14 text-white">{elm.count}+ Tours</div>
+                  <div className="text-14 text-white">{elm.count}+ Products</div>
                 </div>
               </Link>
             </div>

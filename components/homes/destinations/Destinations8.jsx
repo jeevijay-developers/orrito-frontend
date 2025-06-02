@@ -32,10 +32,10 @@ export default function Destinations8() {
           data-aos-delay=""
           className="row y-gap-30 md:y-gap-20 pt-40 sm:pt-20"
         >
-          {destinations11.map((elm, i) => (
-            <div key={i} className="col-xl-3 col-lg-4 col-md-6">
+          {destinations11.slice(0, 6).map((elm, i) => (
+            <div key={i} className="col-xl-4 col-lg-4 col-md-6">
               <Link href="/tour-list-1" className="featureCard -type-9">
-                <div className="featureCard__image">
+                <div className="featureCard__image cateory-grid">
                   <Image
                     width={165}
                     height={165}
@@ -47,7 +47,7 @@ export default function Destinations8() {
                 <div className="featureCard__content ml-20">
                   <h4 className="text-18 fw-500">{elm.name}</h4>
                   <div className="text-14 lh-13 mt-5">
-                    {elm.toursCount}+ Tours
+                    {elm.toursCount}+ Products
                   </div>
                 </div>
               </Link>
