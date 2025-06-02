@@ -27,8 +27,7 @@ export default function Hero() {
               <h1 className="pageHeader__title">About Us</h1>
 
               <p className="pageHeader__text">
-                A tropical paradise made for animal lovers replete with monkey
-                caves, dog foundations, and dolphins in the wild.
+                Innovating Sustainable Lighting for a Brighter Future
               </p>
             </div>
           </div>

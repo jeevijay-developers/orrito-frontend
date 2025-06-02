@@ -7,25 +7,28 @@ export default function Information() {
         <div className="row y-gap-20 justify-between">
           <div className="col-lg-6">
             <h2 className="text-30 fw-700">
-              Hello. Our agency has been present for over 29 years in the
-              market. We make the most of all our customers.
+              Innovating the Future of Lighting with Oritto
             </h2>
           </div>
 
           <div className="col-lg-5">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Oritto is a 100% Made-in-India FMEG brand under Prabuddha Power,
+              dedicated to delivering cutting-edge LED lighting solutions.
+              Strategically headquartered in Madhya Pradesh, we combine
+              innovation, sustainability, and operational excellence to
+              illuminate homes, industries, and urban spaces across the nation.
               <br />
               <br />
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              With a state-of-the-art 24,000 sq. ft. manufacturing facility in
+              Mandideep and warehouses in Bhopal & Indore, we produce 400,000+
+              SKUs monthly. Our backward-integrated processes ensure superior
+              quality control, cost efficiency, and on-time delivery, making us
+              a trusted partner for OEMs and consumers alike.
             </p>
 
             <button className="button -md -dark-1 bg-accent-1 text-white mt-30">
-              Learn More
+              Explore Our Journey
             </button>
           </div>
         </div>

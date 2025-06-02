@@ -1,27 +1,27 @@
 export const features = [
   {
     id: 1,
-    iconSrc: "/img/icons/1/ticket.svg",
-    title: "Ultimate flexibility",
-    text: "You're in control, with free cancellation and payment options to satisfy any plan or budget.",
+    iconSrc: "/img/icons/1/innovation.png", // Replace with relevant icon
+    title: "100% Made in India",
+    text: "Proudly supporting local manufacturing with cutting-edge LED solutions designed for Indian conditions.",
   },
   {
     id: 2,
-    iconSrc: "/img/icons/1/hot-air-balloon.svg",
-    title: "Memorable experiences",
-    text: "Browse and book tours and activities so incredible, you'll want to tell your friends.",
+    iconSrc: "/img/icons/1/quality.png",
+    title: "Backward Integration",
+    text: "End-to-end control over production ensures superior quality and cost efficiency.",
   },
   {
     id: 3,
-    iconSrc: "/img/icons/1/diamond.svg",
-    title: "Quality at our core",
-    text: "High-quality standards. Millions of reviews. A tourz company.",
+    iconSrc: "/img/icons/1/capacity.png",
+    title: "Scalable Production",
+    text: "400,000+ SKUs/month capacity with a 24,000 sq. ft. state-of-the-art facility.",
   },
   {
     id: 4,
-    iconSrc: "/img/icons/1/medal.svg",
-    title: "Award-winning support",
-    text: "New price? New plan? No problem. We're here to help, 24/7.",
+    iconSrc: "/img/icons/1/sustainability.png",
+    title: "Sustainable Innovation",
+    text: "Energy-efficient designs aligned with global green building standards.",
   },
 ];
 export const featuresFour = [
@@ -47,21 +47,21 @@ export const featuresFour = [
 export const featuresTwo = [
   {
     id: 1,
-    iconSrc: "/img/icons/2/1.svg",
-    value: "240",
-    label: "Total Destinations",
+    iconSrc: "/img/icons/oritto/made-in-india.svg", // Custom icon
+    value: "100%",
+    label: "Made in India",
   },
   {
     id: 2,
-    iconSrc: "/img/icons/2/2.svg",
-    value: "3672",
-    label: "Amazing Tours",
+    iconSrc: "/img/icons/oritto/production-capacity.svg",
+    value: "400K+",
+    label: "SKUs Monthly",
   },
   {
     id: 3,
-    iconSrc: "/img/icons/2/3.svg",
-    value: "92,842",
-    label: "Happy Customer",
+    iconSrc: "/img/icons/oritto/energy-efficiency.svg",
+    value: "30+",
+    label: "Skilled Technicians",
   },
 ];
 

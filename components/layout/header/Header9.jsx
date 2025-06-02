@@ -66,7 +66,8 @@ export default function Header9() {
             </div>
           </div>
 
-          {/* <div className="headerMobile__right">
+          {/* <div classN
+          ame="headerMobile__right">
             <button
               onClick={() => pageNavigate("/tour-list-1")}
               className="d-flex"
