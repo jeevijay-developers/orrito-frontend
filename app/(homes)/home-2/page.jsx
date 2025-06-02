@@ -23,7 +23,7 @@ export default function page() {
   return (
     <>
       <main>
-        <Header2 />
+        {/* <Header2 />
         <Hero2 />
         <OfferDestinations />
         <TourSlider2 />
@@ -38,7 +38,7 @@ export default function page() {
         <FeaturesThree />
         <ArticlesOne />
         <BrandsOne />
-        <FooterTwo />
+        <FooterTwo /> */}
       </main>
     </>
   );
