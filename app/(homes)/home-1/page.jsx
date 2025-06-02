@@ -10,11 +10,12 @@ import Tour1 from "@/components/homes/tours/Tour1";
 import TourSlderOne from "@/components/homes/tours/TourSlderOne";
 import FooterOne from "@/components/layout/footers/FooterOne";
 import Header1 from "@/components/layout/header/Header1";
+import Header9 from "@/components/layout/header/Header9";
 
 export default function Home() {
   return (
     <main>
-      <Header1 />
+      <Header9 />
       <Hero1 />
       <FeaturesOne />
       <DestinationsOne />

@@ -37,7 +37,7 @@ export default function Header9() {
   return (
     <>
       <header
-        className={`header -type-10 js-header  ${addClass ? "-is-sticky" : ""}`}
+        className={`header -type-10 js-header -is-sticky `} //${addClass ? "-is-sticky" : ""}
       >
         <div className="header__container">
           <div className="headerMobile__left">
@@ -50,12 +50,12 @@ export default function Header9() {
           </div>
 
           <div className="header__left">
-            <div className="header__logo">
+            <div className="header__logo ">
               <Link href="/" className="header__logo">
                 <Image
-                  width="167"
-                  height="32"
-                  src="/img/general/logo-light.svg"
+                  width="120"
+                  height="25"
+                  src="/img/general/logo.png"
                   alt="logo icon"
                 />
               </Link>
@@ -66,7 +66,7 @@ export default function Header9() {
             </div>
           </div>
 
-          <div className="headerMobile__right">
+          {/* <div className="headerMobile__right">
             <button
               onClick={() => pageNavigate("/tour-list-1")}
               className="d-flex"
@@ -80,9 +80,9 @@ export default function Header9() {
             >
               <i className="icon-person text-18 text-white"></i>
             </button>
-          </div>
+          </div> */}
 
-          <div className="header__right">
+          {/* <div className="header__right">
             <div className="text-white">
               <Currency
                 parentClass={
@@ -101,7 +101,7 @@ export default function Header9() {
             >
               Log in
             </Link>
-          </div>
+          </div> */}
         </div>
       </header>
       <MobileMenu

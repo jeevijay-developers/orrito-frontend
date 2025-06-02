@@ -1,6 +1,6 @@
 "use client";
 
-import { homes, pages, tours } from "@/data/menu";
+import { category, homes, pages, tours } from "@/data/menu";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -19,14 +19,26 @@ export default function Menu() {
                   ? "activeMenu"
                   : ""
               }
+              href="/"
+            >
+              Home
+            </a>
+          </div>
+          <div className="desktopNav__item">
+            <a
+              className={
+                pathname?.split("/")[1].split("-")[0] == "home"
+                  ? "activeMenu"
+                  : ""
+              }
               href="#"
             >
-              Home <i className="icon-chevron-down"></i>
+              Category <i className="icon-chevron-down"></i>
             </a>
 
             <div className="desktopNavSubnav">
               <div className="desktopNavSubnav__content">
-                {homes.map((elm, i) => (
+                {category.map((elm, i) => (
                   <div key={i} className="desktopNavSubnav__item text-dark-1">
                     <Link
                       className={pathname == elm.href ? "activeMenu" : ""}
@@ -40,7 +52,7 @@ export default function Menu() {
             </div>
           </div>
 
-          <div className="desktopNav__item">
+          {/* <div className="desktopNav__item">
             <a href="#">
               Tour <i className="icon-chevron-down"></i>
             </a>
@@ -119,11 +131,11 @@ export default function Menu() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="desktopNav__item">
+          {/* <div className="desktopNav__item">
             <Link href="/destinations">Destination</Link>
-          </div>
+          </div> */}
 
           <div className="desktopNav__item">
             <a href="#">Activities</a>
