@@ -1,4 +1,5 @@
-import { features } from "@/data/features";
+
+import { featuresFour } from "@/data/features";
 import Image from "next/image";
 import React from "react";
 
@@ -18,7 +19,7 @@ export default function FeaturesOne() {
           data-aos="fade-up"
           className="row md:x-gap-20 pt-40 sm:pt-20 mobile-css-slider -w-280"
         >
-          {features?.map((elm, i) => (
+          {featuresFour.map((elm, i) => (
             <div key={i} className="col-lg-3 col-sm-6">
               <div className="featureIcon -type-1 pr-40 md:pr-0">
                 <div className="featureIcon__icon">
