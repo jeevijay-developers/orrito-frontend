@@ -1,13 +1,13 @@
 export const featuresFour = [
   {
     id: 1,
-    iconSrc: "/img/icons/1/innovation.png", // Replace with relevant icon
+    iconSrc: "/img/icons/1/india.png", // Replace with relevant icon
     title: "100% Made in India",
     text: "Proudly supporting local manufacturing with cutting-edge LED solutions designed for Indian conditions.",
   },
   {
     id: 2,
-    iconSrc: "/img/icons/1/quality.png",
+    iconSrc: "/img/icons/1/integration.png",
     title: "Backward Integration",
     text: "End-to-end control over production ensures superior quality and cost efficiency.",
   },
@@ -19,7 +19,7 @@ export const featuresFour = [
   },
   {
     id: 4,
-    iconSrc: "/img/icons/1/sustainability.png",
+    iconSrc: "/img/icons/1/sustainable.png",
     title: "Sustainable Innovation",
     text: "Energy-efficient designs aligned with global green building standards.",
   },
