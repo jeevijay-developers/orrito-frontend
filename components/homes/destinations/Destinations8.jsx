@@ -10,7 +10,7 @@ export default function Destinations8() {
         <div className="row y-gap-10 justify-between items-end">
           <div className="col-auto">
             <h2 data-aos="fade-up" data-aos-delay="" className="text-30">
-              Trending destinations
+              Trending categories
             </h2>
           </div>
 

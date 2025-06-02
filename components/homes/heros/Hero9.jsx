@@ -11,47 +11,47 @@ const slidesData = [
   {
     id: "01",
     imageSrc: "/img/hero/9/1.jpg",
-    title: "Iceland's legendary Golden Circle",
-    subtitle: "Starting at $978",
-    text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
+    // title: "Iceland's legendary Golden Circle",
+    // subtitle: "Starting at $978",
+    // text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
 
-    imageSvgSrc: "/img/hero/9/image.svg",
+    // imageSvgSrc: "/img/hero/9/image.svg",
   },
   {
     id: "02",
     imageSrc: "/img/hero/9/1.jpg",
-    title: "Iceland's legendary Golden Circle",
-    subtitle: "Starting at $978",
-    text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
+    // title: "Iceland's legendary Golden Circle",
+    // subtitle: "Starting at $978",
+    // text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
 
-    imageSvgSrc: "/img/hero/9/image.svg",
+    // imageSvgSrc: "/img/hero/9/image.svg",
   },
   {
     id: "03",
     imageSrc: "/img/hero/9/1.jpg",
-    title: "Iceland's legendary Golden Circle",
-    subtitle: "Starting at $978",
-    text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
+    // title: "Iceland's legendary Golden Circle",
+    // subtitle: "Starting at $978",
+    // text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
 
-    imageSvgSrc: "/img/hero/9/image.svg",
+    // imageSvgSrc: "/img/hero/9/image.svg",
   },
   {
     id: "04",
     imageSrc: "/img/hero/9/1.jpg",
-    title: "Iceland's legendary Golden Circle",
-    subtitle: "Starting at $978",
-    text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
+    // title: "Iceland's legendary Golden Circle",
+    // subtitle: "Starting at $978",
+    // text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
 
-    imageSvgSrc: "/img/hero/9/image.svg",
+    // imageSvgSrc: "/img/hero/9/image.svg",
   },
   {
     id: "05",
     imageSrc: "/img/hero/9/1.jpg",
-    title: "Iceland's legendary Golden Circle",
-    subtitle: "Starting at $978",
-    text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
+    // title: "Iceland's legendary Golden Circle",
+    // subtitle: "Starting at $978",
+    // text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
 
-    imageSvgSrc: "/img/hero/9/image.svg",
+    // imageSvgSrc: "/img/hero/9/image.svg",
   },
   // Add more data for additional slides as needed
 ];
@@ -125,7 +125,7 @@ export default function Hero9() {
                   <div className="container">
                     <div className="hero__content">
                       <div className="row items-center justify-between">
-                        <div className="col-xl-7 col-lg-8">
+                        {/* <div className="col-xl-7 col-lg-8">
                           <div
                             data-aos="fade-up"
                             data-aos-delay="100"
@@ -163,9 +163,9 @@ export default function Hero9() {
                               <i className="icon-arrow-top-right ml-10"></i>
                             </button>
                           </Link>
-                        </div>
+                        </div> */}
 
-                        <div className="col-lg-4">
+                        {/* <div className="col-lg-4">
                           <div className="hero__image">
                             <Image
                               width="437"
@@ -174,7 +174,7 @@ export default function Hero9() {
                               alt="image"
                             />
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -201,6 +201,13 @@ export default function Hero9() {
           </div>
         </div>
       </div>
+      <style jsx>
+            {`
+            .swiper-wrapper{
+            height: 45rem;
+            }
+            `}
+      </style>
     </section>
   );
 }
