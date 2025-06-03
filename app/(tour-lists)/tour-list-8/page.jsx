@@ -3,8 +3,8 @@ import TourList6 from "@/components/tours/TourList6";
 import React from "react";
 
 export const metadata = {
-  title: "Tour-list-8 || ViaTour - Travel & Tour React NextJS Template",
-  description: "ViaTour - Travel & Tour React NextJS Template",
+  title: "Tour-list-8 || Oritto LED Lights",
+  description: "Oritto LED Lights",
 };
 
 export default function page() {

@@ -21,8 +21,8 @@ export default function FooterSeven() {
 
                   <div className="col-auto">
                     <div className="text-20 fw-500">
-                      Speak to our expert at
-                      <span className="text-accent-1">1-800-453-6744</span>
+                      Speak to our expert at{" "}
+                      <span className="text-accent-1">1800 889 4722</span>
                     </div>
                   </div>
                 </div>
@@ -46,17 +46,20 @@ export default function FooterSeven() {
                 <h4 className="text-20 fw-500">Contact</h4>
 
                 <div className="y-gap-10 mt-20">
-                  <a className="d-block" href="#">
-                    328 Queensberry Street, North Melbourne VIC3051, Australia.
+                  <a className="d-block" href="/contact">
+                    ORITTO LED Lights (Lighting Divison of Prabuddha Power) ,
+                    Plot no. E-1(D), New II Industrial Area, Near Lupin
+                    Industries gate no. 1, Mandideep, Bhopal, Madhya Pradesh.
+                    PIN - 462046
                   </a>
                   <a className="d-block" href="#">
-                    hi@viatours.com
+                    sales@oritto.com
                   </a>
                 </div>
               </div>
 
               <FooterLinks />
-
+              {/* 
               <div className="col-lg-3 col-md-6">
                 <h4 className="text-20 fw-500">Newsletter</h4>
                 <p className="mt-20">
@@ -81,7 +84,8 @@ export default function FooterSeven() {
                     Android App
                   </a>
                 </div>
-              </div>
+              </div> */}
+              {}
             </div>
           </div>
         </div>
@@ -91,7 +95,7 @@ export default function FooterSeven() {
         <div className="footer__bottom">
           <div className="row y-gap-5 justify-between items-center">
             <div className="col-auto">
-              <div>© Copyright Viatours {new Date().getFullYear()}</div>
+              <div>© Copyright Oritto {new Date().getFullYear()}</div>
             </div>
 
             <div className="col-auto">

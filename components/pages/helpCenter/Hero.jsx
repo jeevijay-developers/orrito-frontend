@@ -24,18 +24,11 @@ export default function Hero() {
         <div className="row justify-center">
           <div className="col-12">
             <div className="pageHeader__content">
-              <h1 className="pageHeader__title">Welcome to the Help Center</h1>
-
+              <h1 className="pageHeader__title">Frequently Asked Questions</h1>
               <p className="pageHeader__text">
-                Lorem ipsum is placeholder text commonly used in site.
+                Find quick answers to common queries about Oritto's LED lighting
+                solutions, products, and services.
               </p>
-
-              <div className="pageHeader__search">
-                <input type="text" placeholder="Search for a topic" />
-                <button>
-                  <i className="icon-search text-15 text-white"></i>
-                </button>
-              </div>
             </div>
           </div>
         </div>

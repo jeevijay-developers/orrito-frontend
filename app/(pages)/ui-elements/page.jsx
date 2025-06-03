@@ -5,8 +5,8 @@ import PageHeader from "@/components/pages/uiElements/PageHeader";
 import React from "react";
 
 export const metadata = {
-  title: "UI-elements || ViaTour - Travel & Tour React NextJS Template",
-  description: "ViaTour - Travel & Tour React NextJS Template",
+  title: "UI-elements || Oritto LED Lights",
+  description: "Oritto LED Lights",
 };
 
 export default function page() {

@@ -2,9 +2,8 @@ import Profile from "@/components/dasboard/Profile";
 import React from "react";
 
 export const metadata = {
-  title:
-    "Dashboard-my-profile || ViaTour - Travel & Tour React NextJS Template",
-  description: "ViaTour - Travel & Tour React NextJS Template",
+  title: "Dashboard-my-profile || Oritto LED Lights",
+  description: "Oritto LED Lights",
 };
 
 export default function page() {

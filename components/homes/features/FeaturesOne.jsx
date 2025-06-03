@@ -23,7 +23,19 @@ export default function FeaturesOne() {
             <div key={i} className="col-lg-3 col-sm-6">
               <div className="featureIcon -type-1 pr-40 md:pr-0">
                 <div className="featureIcon__icon d-flex justify-content-center">
-                  <Image width={60} height={60} src={elm.iconSrc} alt="icon" />
+                  <Image
+                    width={60}
+                    height={60}
+                    src={elm.iconSrc}
+                    alt="icon"
+                    style={{
+                      backgroundColor: "#e67e22",
+                      padding: "20px",
+                      width: "100px",
+                      height: "100px",
+                      borderRadius: "10%",     
+                    }}
+                  />
                 </div>
 
                 <h3 className="featureIcon__title text-18 fw-500 mt-30">

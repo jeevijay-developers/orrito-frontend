@@ -50,15 +50,25 @@ export default function Header9() {
           </div>
 
           <div className="header__left">
+            <Link href="/" className="header__logo">
+              <Image
+                width="120"
+                height="25"
+                src="/img/general/oritto.png"
+                alt="logo icon"
+              />
+            </Link>
+          </div>
+          <div className="header__right">
             <div className="header__logo ">
-              <Link href="/" className="header__logo">
+              {/* <Link href="/" className="header__logo">
                 <Image
                   width="120"
                   height="25"
-                  src="/img/general/logo.png"
+                  src="/img/general/oritto.png"
                   alt="logo icon"
                 />
-              </Link>
+              </Link> */}
 
               <div className="text-white">
                 <Menu />

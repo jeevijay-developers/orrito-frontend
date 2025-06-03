@@ -4,8 +4,8 @@ import Register from "@/components/pages/Register";
 import React from "react";
 
 export const metadata = {
-  title: "Register || ViaTour - Travel & Tour React NextJS Template",
-  description: "ViaTour - Travel & Tour React NextJS Template",
+  title: "Register || Oritto LED Lights",
+  description: "Oritto LED Lights",
 };
 
 export default function page() {

@@ -10,6 +10,18 @@ const dmsans = DM_Sans({
   subsets: ["latin"],
   display: "swap",
 });
+// export const metadata = {
+//   title: "Your App Title",
+//   description: "Your app description goes here.",
+//   icons: {
+//     icon: [
+//       { url: "/img/general/oritto.png", sizes: "32x32", type: "image/png" },
+//       // { url: "/img/general/oritto.png", sizes: "64x64", type: "image/png" },
+//     ],
+//     apple: "/apple-touch-icon.png",
+//   },
+//   manifest: "/site.webmanifest",
+// };
 // const inter = Inter({ subsets: ["latin"] });
 if (typeof window !== "undefined") {
   import("bootstrap");
