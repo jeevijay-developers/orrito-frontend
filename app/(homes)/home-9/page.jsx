@@ -14,8 +14,8 @@ import Leaders from "@/components/section/Leaders";
 import React from "react";
 
 export const metadata = {
-  title: "Home-9 || ViaTour - Travel & Tour React NextJS Template",
-  description: "ViaTour - Travel & Tour React NextJS Template",
+  title: "Oritto",
+  description: "Smart Lighting",
 };
 
 export default function page() {

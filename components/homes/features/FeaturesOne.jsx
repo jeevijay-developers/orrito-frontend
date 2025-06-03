@@ -33,7 +33,7 @@ export default function FeaturesOne() {
                       padding: "20px",
                       width: "100px",
                       height: "100px",
-                      borderRadius: "10%",
+                      borderRadius: "10%",     
                     }}
                   />
                 </div>

@@ -2,47 +2,47 @@ export const testimonialsOne = [
   {
     id: 1,
     imageSrc: "/img/testimonials/1/2.png",
-    title: "Excellent Service!",
+    title: "Brilliant LED Solutions!",
     content:
-      "I had an amazing experience with this company. The service was top-notch, and the staff was incredibly friendly. I highly recommend them!",
-    authorName: "John Smith",
-    authorRole: "Traveler",
+      "Oritto’s LED lights are a perfect blend of quality and affordability. The energy savings are noticeable, and the 'Made in India' assurance gives us confidence. Highly recommended for homes!",
+    authorName: "Rahul Verma",
+    authorRole: "Homeowner, Mumbai",
   },
   {
     id: 2,
     imageSrc: "/img/testimonials/1/2.png",
-    title: "Great Adventures!",
+    title: "Reliable for Businesses",
     content:
-      "The tours in this website are great. I had been really enjoying with my family! The team is very professional and takes care of the customers. Will surely recommend it to my friends.",
-    authorName: "Alice Johnson",
-    authorRole: "Explorer",
+      "We use Oritto’s commercial lighting in our retail stores. The brightness and longevity are exceptional, and their team provides excellent support. A trusted partner!",
+    authorName: "Neha Kapoor",
+    authorRole: "Store Owner, Delhi",
   },
   {
     id: 3,
     imageSrc: "/img/testimonials/1/2.png",
-    title: "Awesome Experience!",
+    title: "Great for Smart Cities",
     content:
-      "The best travel company I've ever used. Their tours are fantastic, and the guides are very knowledgeable. I can't wait to go on another adventure with them.",
-    authorName: "David Williams",
-    authorRole: "Adventurer",
+      "Oritto’s street lights have been a game-changer for our municipal projects. Their durability and low maintenance make them ideal for public infrastructure.",
+    authorName: "Sanjay Joshi",
+    authorRole: "Civil Contractor, Pune",
   },
   {
     id: 4,
     imageSrc: "/img/testimonials/1/2.png",
-    title: "Awesome Experience!",
+    title: "Eco-Friendly & Efficient",
     content:
-      "The best travel company I've ever used. Their tours are fantastic, and the guides are very knowledgeable. I can't wait to go on another adventure with them.",
-    authorName: "David Williams",
-    authorRole: "Adventurer",
+      "Switching to Oritto’s solar LED lights reduced our energy costs by 40%. Their sustainable approach aligns perfectly with our green initiatives.",
+    authorName: "Ananya Desai",
+    authorRole: "Facility Manager, Bangalore",
   },
   {
     id: 5,
     imageSrc: "/img/testimonials/1/2.png",
-    title: "Awesome Experience!",
+    title: "Top-Notch Service",
     content:
-      "The best travel company I've ever used. Their tours are fantastic, and the guides are very knowledgeable. I can't wait to go on another adventure with them.",
-    authorName: "David Williams",
-    authorRole: "Adventurer",
+      "From product selection to after-sales support, Oritto delivers excellence. Their warranty process is seamless, and their team is always responsive.",
+    authorName: "Vikram Singh",
+    authorRole: "Electrical Contractor, Hyderabad",
   },
 ];
 
