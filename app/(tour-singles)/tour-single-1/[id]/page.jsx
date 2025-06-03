@@ -22,7 +22,7 @@ export default function page({ params }) {
         <Header1 />
         <PageHeader />
 
-        <SingleOne tour={tour} />
+        <SingleOne product={tour} />
         <TourSlider />
         <FooterOne />
       </main>

@@ -1,15 +1,17 @@
 "use client";
 
 import Stars from "@/components/common/Stars";
-import { tourData } from "@/data/tours";
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
+import { tourData } from "@/data/tours"; // Ensure this is uncommented and available
+
 const ddlocations = ["New York", "London", "Paris"];
 
 export default function Tour2() {
   const [ddActive, setDdActive] = useState(false);
   const [currentLocation, setCurrentLocation] = useState("New York");
   const dropDownContainer = useRef();
+
   useEffect(() => {
     const handleClick = (event) => {
       if (
@@ -26,6 +28,13 @@ export default function Tour2() {
       document.removeEventListener("click", handleClick);
     };
   }, []);
+
+  const filteredTours = tourData
+    .filter((elm) =>
+      elm.location.toLowerCase().includes(currentLocation.toLowerCase())
+    )
+    .slice(0, 4);
+
   return (
     <section className="layout-pt-xl layout-pb-xl">
       <div className="container">
@@ -36,15 +45,13 @@ export default function Tour2() {
               <div
                 className={`dropdown -type-list js-dropdown js-form-dd ${
                   ddActive ? "is-active" : ""
-                } `}
-                data-main-value="london"
+                }`}
               >
                 <div
                   className="dropdown__button text-light-7 js-button"
                   onClick={() => setDdActive((pre) => !pre)}
                 >
                   <span style={{ marginLeft: "8px" }} className="js-title">
-                    {" "}
                     {currentLocation}
                   </span>
                   <i className="icon-chevron-down ml-5 text-18"></i>
@@ -74,14 +81,14 @@ export default function Tour2() {
           data-aos-delay=""
           className="row y-gap-30 pt-40 sm:pt-20"
         >
-          {tourData
-            .filter((elm) =>
-              elm.location
-                .toLowerCase()
-                .includes(currentLocation.toLowerCase()),
-            )
-            .slice(0, 4)
-            .map((elm, i) => (
+          {filteredTours.length === 0 ? (
+            <div className="col-12">
+              <p className="text-18 text-center text-dark-1">
+                No Featured Products
+              </p>
+            </div>
+          ) : (
+            filteredTours.map((elm, i) => (
               <div key={i} className="col-lg-3 col-md-6">
                 <a
                   href="#"
@@ -139,7 +146,8 @@ export default function Tour2() {
                   </div>
                 </a>
               </div>
-            ))}
+            ))
+          )}
         </div>
       </div>
     </section>
