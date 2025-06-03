@@ -206,8 +206,8 @@ export default function Hero9() {
             .swiper-wrapper{
             height: 45rem;
             }
-            .hero__bg{
-              padding:0;
+            .hero.-type-9 .hero__bg{
+              padding:0px;
             }
             `}
       </style>
