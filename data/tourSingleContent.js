@@ -77,27 +77,38 @@ export const roadmapData2 = [
 
 export const faqData = [
   {
-    question: "Can I get the refund?",
+    question: "What is Oritto's warranty policy for LED products?",
     answer:
-      "Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat cancellation policy: For a full refund, cancel at least 24 hours in advance of the start date of the experience. Discover and book Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat",
+      "Oritto offers a standard warranty of 2-3 years on all LED lighting products, depending on the product category. Warranty covers manufacturing defects and performance issues. Proof of purchase is required. For details, refer to the warranty card or contact our support team.",
   },
   {
-    question: "Can I change the travel date?",
+    question:
+      "How can I request a replacement or refund for a defective product?",
     answer:
-      "Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat cancellation policy: For a full refund, cancel at least 24 hours in advance of the start date of the experience. Discover and book Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat",
+      "If your product is defective, please contact our customer service at sales@oritto.com or call 1800 889 4722 within the warranty period. Provide the invoice and product details. We will guide you through the replacement process. Refunds are processed if replacements are unavailable or delayed beyond 30 days.",
+  },
+  // {
+  //   question: "Where can I buy Oritto LED products?",
+  //   answer:
+  //     "Oritto products are available through authorized distributors, retail partners. Use the 'Where to Buy' tool on our website to locate nearby stores or order online for doorstep delivery.",
+  // },
+  {
+    question: "Do you offer bulk/industrial lighting solutions?",
+    answer:
+      "Yes! Oritto specializes in custom LED solutions for industrial, commercial, and architectural projects. Our team provides end-to-end support—from design to installation. Email projects@oritto.com or call us to discuss your requirements.",
   },
   {
-    question: "When and where does the tour end?",
+    question:
+      "How energy-efficient are Oritto LED lights compared to traditional bulbs?",
     answer:
-      "Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat cancellation policy: For a full refund, cancel at least 24 hours in advance of the start date of the experience. Discover and book Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat",
+      "Oritto LEDs consume up to 80% less energy than incandescent bulbs and last 25 times longer. Our products meet BEE star ratings and global efficiency standards, ensuring optimal brightness with minimal power usage.",
   },
   {
-    question: "Do you arrange airport transfers?",
+    question: "What makes Oritto's manufacturing process unique?",
     answer:
-      "Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat cancellation policy: For a full refund, cancel at least 24 hours in advance of the start date of the experience. Discover and book Phang Nga Bay Sea Cave Canoeing & James Bond Island w/ Buffet Lunch by Big Boat",
+      "Oritto’s backward-integrated facility in Madhya Pradesh ensures complete quality control—from design to delivery. We use advanced SMT lines, precision molding, and rigorous testing (IP ratings, aging tests) to guarantee reliability and sustainability.",
   },
 ];
-
 export const overallRatingData = [
   {
     id: 1,
