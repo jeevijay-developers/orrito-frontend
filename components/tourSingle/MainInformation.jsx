@@ -1,7 +1,10 @@
+'use client'
 import React from "react";
 import Stars from "../common/Stars";
 
-export default function MainInformation({ tour }) {
+export default function MainInformation({ product }) {
+  // console.log('MainInformation product: ', product);
+  
   return (
     <>
       <div className="row y-gap-20 justify-between items-end">
@@ -20,26 +23,26 @@ export default function MainInformation({ tour }) {
           </div>
 
           <h2 className="text-40 sm:text-30 lh-14 mt-20">
-            {tour?.title.split(" ").slice(0, 7).join(" ")}
+            {product?.name.split(" ").slice(0, 7).join(" ")}
 
             <br />
-            {tour?.title.split(" ").slice(7).join(" ")}
+            {product?.name.split(" ").slice(7).join(" ")}
           </h2>
 
-          <div className="row x-gap-20 y-gap-20 items-center pt-20">
+          {/* <div className="row x-gap-20 y-gap-20 items-center pt-20">
             <div className="col-auto">
               <div className="d-flex items-center">
                 <div className="d-flex x-gap-5 pr-10">
-                  <Stars star={tour?.rating} font={12} />
+                  <Stars star={product?.rating} font={12} />
                 </div>
-                {tour?.rating} ({tour.ratingCount})
+                {product?.rating} ({product.ratingCount})
               </div>
             </div>
 
             <div className="col-auto">
               <div className="d-flex items-center">
                 <i className="icon-pin text-16 mr-5"></i>
-                {tour?.location}
+                {product?.location}
               </div>
             </div>
 
@@ -49,9 +52,9 @@ export default function MainInformation({ tour }) {
                 30K+ booked
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
-
+{/* 
         <div className="col-auto">
           <div className="d-flex x-gap-30 y-gap-10">
             <a href="#" className="d-flex items-center">
@@ -64,7 +67,7 @@ export default function MainInformation({ tour }) {
               Wishlist
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

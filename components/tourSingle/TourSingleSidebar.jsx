@@ -1,46 +1,46 @@
-"use client";
+// "use client";
 
-import React, { useEffect, useState } from "react";
-import Calender from "../common/dropdownSearch/Calender";
-import Image from "next/image";
-import { times } from "@/data/tourSingleContent";
+// import React, { useEffect, useState } from "react";
+// import Calender from "../common/dropdownSearch/Calender";
+// import Image from "next/image";
+// import { times } from "@/data/tourSingleContent";
 
-export default function TourSingleSidebar() {
-  const prices = {
-    adultPrice: 94,
-    youthPrice: 84,
-    childrenPrice: 20,
-    extraService: 40,
-    servicePerPerson: 40,
-  };
+export default function TourSingleSidebar({ product }) {
+  // const prices = {
+  //   adultPrice: 94,
+  //   youthPrice: 84,
+  //   childrenPrice: 20,
+  //   extraService: 40,
+  //   servicePerPerson: 40,
+  // };
 
-  const [adultNumber, setAdultNumber] = useState(3);
-  const [youthNumber, setYouthNumber] = useState(2);
-  const [childrenNumber, setChildrenNumber] = useState(4);
-  const [isExtraService, setisExtraService] = useState(false);
-  const [isServicePerPerson, setIsServicePerPerson] = useState(false);
-  const [extraCharge, setExtraCharge] = useState(0);
-  useEffect(() => {
-    setExtraCharge(0);
-    if (isExtraService) {
-      setExtraCharge((pre) => pre + prices.extraService);
-    }
-    if (isServicePerPerson) {
-      setExtraCharge((pre) => pre + prices.servicePerPerson);
-    }
-  }, [isExtraService, isServicePerPerson, setExtraCharge]);
+  // const [adultNumber, setAdultNumber] = useState(3);
+  // const [youthNumber, setYouthNumber] = useState(2);
+  // const [childrenNumber, setChildrenNumber] = useState(4);
+  // const [isExtraService, setisExtraService] = useState(false);
+  // const [isServicePerPerson, setIsServicePerPerson] = useState(false);
+  // const [extraCharge, setExtraCharge] = useState(0);
+  // useEffect(() => {
+  //   setExtraCharge(0);
+  //   if (isExtraService) {
+  //     setExtraCharge((pre) => pre + prices.extraService);
+  //   }
+  //   if (isServicePerPerson) {
+  //     setExtraCharge((pre) => pre + prices.servicePerPerson);
+  //   }
+  // }, [isExtraService, isServicePerPerson, setExtraCharge]);
 
-  const [selectedTime, setSelectedTime] = useState("");
-  const [activeTimeDD, setActiveTimeDD] = useState(false);
+  // const [selectedTime, setSelectedTime] = useState("");
+  // const [activeTimeDD, setActiveTimeDD] = useState(false);
 
   return (
     <div className="tourSingleSidebar">
       <div className="d-flex items-center">
         <div>From</div>
-        <div className="text-20 fw-500 ml-10">$1,200</div>
+        <div className="text-24 fw-400 ml-10">₹{product.price}</div>
       </div>
 
-      <div className="searchForm -type-1 -sidebar mt-20">
+      {/* <div className="searchForm -type-1 -sidebar mt-20">
         <div className="searchForm__form">
           <div className="searchFormItem js-select-control js-form-dd js-calendar">
             <div className="searchFormItem__button" data-x-click="calendar">
@@ -286,7 +286,7 @@ export default function TourSingleSidebar() {
       <button className="button -md -dark-1 col-12 bg-accent-1 text-white mt-20">
         Book Now
         <i className="icon-arrow-top-right ml-10"></i>
-      </button>
+      </button> */}
     </div>
   );
 }

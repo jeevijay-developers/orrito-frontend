@@ -13,13 +13,15 @@ import DateCalender from "../DateCalender";
 import RoadMap2 from "../Roadmap2";
 import CommentBox from "../CommentBox";
 
-export default function SingleOne({ tour }) {
+export default function SingleOne({ product }) {
+  // console.log('SingleOne product: ', product);
+  
   return (
     <>
       <section className="">
         <div className="container">
-          <MainInformation tour={tour} />
-          <Gallery1 />
+          <MainInformation product={product} />
+          <Gallery1 product={product} />
         </div>
       </section>
 
@@ -27,13 +29,13 @@ export default function SingleOne({ tour }) {
         <div className="container">
           <div className="row y-gap-30 justify-between">
             <div className="col-lg-8">
-              <div className="row y-gap-20 justify-between items-center layout-pb-md">
+              {/* <div className="row y-gap-20 justify-between items-center layout-pb-md">
                 <OthersInformation />
-              </div>
+              </div> */}
 
-              <Overview />
+              <Overview product={product} />
 
-              <div className="line mt-60 mb-60"></div>
+              {/* <div className="line mt-60 mb-60"></div>
 
               <h2 className="text-30">What's included</h2>
 
@@ -77,12 +79,12 @@ export default function SingleOne({ tour }) {
                 See more reviews
                 <i className="icon-arrow-top-right text-16 ml-10"></i>
               </button>
-              <CommentBox />
+              <CommentBox /> */}
             </div>
 
             <div className="col-lg-4">
               <div className="d-flex justify-end js-pin-content">
-                <TourSingleSidebar />
+                <TourSingleSidebar product={product} />
               </div>
             </div>
           </div>
