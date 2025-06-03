@@ -2,8 +2,8 @@ import Messages from "@/components/dasboard/Messages";
 import React from "react";
 
 export const metadata = {
-  title: "Dashboard-messages || ViaTour - Travel & Tour React NextJS Template",
-  description: "ViaTour - Travel & Tour React NextJS Template",
+  title: "Dashboard-messages || Oritto LED Lights",
+  description: "Oritto LED Lights",
 };
 
 export default function page() {

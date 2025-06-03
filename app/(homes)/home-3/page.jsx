@@ -14,8 +14,8 @@ import Header3 from "@/components/layout/header/Header3";
 import React from "react";
 
 export const metadata = {
-  title: "Home-3 || ViaTour - Travel & Tour React NextJS Template",
-  description: "ViaTour - Travel & Tour React NextJS Template",
+  title: "Home-3 || Oritto LED Lights",
+  description: "Oritto LED Lights",
 };
 
 export default function page() {

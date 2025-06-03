@@ -9,8 +9,8 @@ import Style6 from "@/components/tours/ListStyle.jsx/Style6";
 import React from "react";
 
 export const metadata = {
-  title: "Tour-list-10 || ViaTour - Travel & Tour React NextJS Template",
-  description: "ViaTour - Travel & Tour React NextJS Template",
+  title: "Tour-list-10 || Oritto LED Lights",
+  description: "Oritto LED Lights",
 };
 
 export default function page() {

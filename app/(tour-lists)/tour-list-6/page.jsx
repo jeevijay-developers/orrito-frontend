@@ -5,8 +5,8 @@ import TourList5 from "@/components/tours/TourList5";
 import React from "react";
 
 export const metadata = {
-  title: "Tour-list-6 || ViaTour - Travel & Tour React NextJS Template",
-  description: "ViaTour - Travel & Tour React NextJS Template",
+  title: "Tour-list-6 || Oritto LED Lights",
+  description: "Oritto LED Lights",
 };
 
 export default function page() {
