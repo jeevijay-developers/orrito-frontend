@@ -1,27 +1,27 @@
 const locations = [
   {
     id: 1,
-    title: "North America",
-    address: "1 Dundas St W Suite 2500 Toronto ON M5G 1Z3, Canada",
-    contact: "1-800-453-6744 canada@tourz.com",
+    title: "Phone",
+    address: "1800 889 4722",
+    // contact: "1-800-453-6744 canada@tourz.com",
   },
   {
     id: 2,
-    title: "Australia",
-    address: "123 Smith St, Melbourne, VIC 3000, Australia",
-    contact: "61-800-123-456 australia@tourz.com",
+    title: "Email",
+    address: "sales@oritto.com.",
+    // contact: "61-800-123-456 australia@tourz.com",
   },
   {
-    id: 3,
-    title: "Europe",
-    address: "45 Rue du Faubourg Saint-Antoine, 75011 Paris, France",
-    contact: "33-800-987-654 europe@tourz.com",
+    "id": 3,
+    title: "Working Hours",
+    address: "10 AM To 6 PM",
   },
   {
     id: 4,
-    title: "Asia",
-    address: "Tokyo, Japan",
-    contact: "81-800-567-890 asia@tourz.com",
+    title: "Address",
+    address:
+      "ORITTO LED Lights (Lighting Divison of Prabuddha Power) , Plot no. E-1(D), New II Industrial Area, Near Lupin Industries gate no. 1, Mandideep, Bhopal, Madhya Pradesh. PIN - 462046",
+    // contact: "81-800-567-890 asia@tourz.com",
   },
 ];
 
