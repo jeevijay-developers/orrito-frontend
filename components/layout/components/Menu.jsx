@@ -137,9 +137,9 @@ export default function Menu() {
             <Link href="/destinations">Destination</Link>
           </div> */}
 
-          <div className="desktopNav__item">
+          {/* <div className="desktopNav__item">
             <a href="#">Activities</a>
-          </div>
+          </div> */}
 
           <div className="desktopNav__item">
             <a href="#">
