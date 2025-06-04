@@ -67,7 +67,7 @@ export default function productQueryForm({ productId, productName }) {
                   <input
                     type="email"
                     name="email"
-                    placeholder="Email (Optional)"
+                    placeholder="Email"
                     required
                   />
                 </div>
