@@ -1,5 +1,7 @@
 "use client";
 
+import { toast } from "react-toastify";
+
 export default function ContactForm() {
   const WEB_3_API_KEY = `1c56fd2b-17f0-4b10-9738-fa805a6c6de6`;
 
@@ -23,7 +25,7 @@ export default function ContactForm() {
     const result = await response.json();
     if (result.success) {
       console.log(result);
-      alert("Thank you for your message! We will get back to you soon.");
+      toast.success("Thank you for your message! We will get back to you soon.");
       event.target.reset();
     }
   }

@@ -29,3 +29,13 @@ export const getProductBySlug = async (slug) => {
         return null;
     }
 }
+
+export const submitProdctQueryForm = async (data) =>{
+    try{
+
+    }
+    catch(error){
+        console.error('Error submitting product query form: ', error);
+        return null;
+    }
+}

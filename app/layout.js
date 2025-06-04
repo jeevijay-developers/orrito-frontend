@@ -1,6 +1,6 @@
 import ScrollToTop from "@/components/common/ScrollToTop";
 import "../public/css/style.css";
-
+import { ToastContainer } from "react-toastify";
 import { DM_Sans } from "next/font/google";
 import ScrollTopBehaviour from "@/components/common/ScrollTopBehavier";
 import Wrapper from "@/components/layout/Wrapper";
@@ -32,6 +32,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head></head>
       <body className={dmsans.className}>
+        <ToastContainer />
         <Wrapper>{children}</Wrapper>
         <ScrollToTop />
         <ScrollTopBehaviour />
