@@ -87,48 +87,53 @@ export default function TourSlider5() {
                           width: "100vw ! important",
                         }}
                       >
-                        <div className="tourCard -type-1 d-block bg-white">
-                          <div className="tourCard__header">
-                            <div className="tourCard__image ratio ratio-28:20">
-                              <img
-                                width={421}
-                                height={301}
-                                src={elm.images[0]?.url}
-                                alt={elm.name}
-                                className="img-ratio rounded-12"
-                              />
-                            </div>
-                          </div>
-
-                          <div className="tourCard__content pt-10">
-                            <div className="tourCard__location d-flex items-center text-13 text-light-2">
-                              <SlEnergy />
-                              {elm.categoryName}
-                            </div>
-
-                            <h3 className="tourCard__title text-16 fw-500 mt-5">
-                              <span>{elm.name}</span>
-                            </h3>
-
-                            <div className="d-flex justify-between items-center border-1-top text-dark-1 pt-10 mt-10">
-                              <div className="d-flex items-center">
-                                <button className="send-enquiry-btn">
-                                  <div
-                                    href={`/product/${elm._id}`}
-                                    className="no-link-style"
-                                  >
-                                    Send Enquiry
-                                  </div>
-                                </button>
-
-                              </div>
-
-                              <div className="d-flex items-center text-lg">
-                                <span className="text-18 fw-600">₹{elm.price}</span>
+                        <Link
+                          href={`/product/${elm.slug}`}
+                          className="text-decoration-none"
+                        >
+                          <div className="tourCard -type-1 d-block bg-white">
+                            <div className="tourCard__header">
+                              <div className="tourCard__image ratio ratio-28:20">
+                                <img
+                                  width={421}
+                                  height={301}
+                                  src={elm.images[0]?.url}
+                                  alt={elm.name}
+                                  className="img-ratio rounded-12"
+                                />
                               </div>
                             </div>
+
+                            <div className="tourCard__content pt-10">
+                              <div className="tourCard__location d-flex items-center text-13 text-light-2">
+                                <SlEnergy />
+                                {elm.categoryName}
+                              </div>
+
+                              <h3 className="tourCard__title text-16 fw-500 mt-5">
+                                <span>{elm.name}</span>
+                              </h3>
+
+                              <div className="d-flex justify-between items-center border-1-top text-dark-1 pt-10 mt-10">
+                                <div className="d-flex items-center">
+                                  <button className="send-enquiry-btn">
+                                    <div
+                                      href={`/product/${elm._id}`}
+                                      className="no-link-style"
+                                    >
+                                      Send Enquiry
+                                    </div>
+                                  </button>
+
+                                </div>
+
+                                <div className="d-flex items-center text-lg">
+                                  <span className="text-18 fw-600">₹{elm.price}</span>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                        </div>
+                        </Link>
                       </SwiperSlide>
                     ))}
                   </Swiper>
