@@ -1,4 +1,6 @@
 import FooterOne from "@/components/layout/footers/FooterOne";
+import FooterSeven from "@/components/layout/footers/FooterSeven";
+import Header9 from "@/components/layout/header/Header1";
 import Header1 from "@/components/layout/header/Header1";
 import Image from "next/image";
 import React from "react";
@@ -12,7 +14,7 @@ export default function NotFound() {
   return (
     <>
       <main>
-        <Header1 />
+        <Header9 />
         <section className="nopage mt-header">
           <div className="container">
             <div className="row y-gap-30 justify-between items-center">
@@ -47,7 +49,7 @@ export default function NotFound() {
             </div>
           </div>
         </section>
-        <FooterOne />
+        <FooterSeven />
       </main>
     </>
   );
