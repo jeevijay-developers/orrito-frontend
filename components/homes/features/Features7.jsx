@@ -111,7 +111,7 @@ export default function Features7() {
                   ></div>
 
                   {/* Card */}
-                  <div className="card shadow-sm border-0">
+                  <div className="card shadow-sm border-0 quater-batch">
                     <div className="card-body text-center p-4">
                       {/* Icon */}
                       <div
@@ -134,7 +134,7 @@ export default function Features7() {
           </div>
 
           {/* Quarter Badges Row */}
-          <div className="row">
+          <div className="row ">
             {topCards.map((elm, i) => (
               <div key={`quarter-top-${elm.id}`} className="col-md-4 text-center rounded-pill">
                 <div
@@ -180,7 +180,7 @@ export default function Features7() {
                   ></div>
 
                   {/* Card */}
-                  <div className="card shadow-sm border-0">
+                  <div className="card shadow-sm border-0 quater-batch">
                     <div className="card-body text-center p-4">
                       {/* Icon */}
                       <div
@@ -225,6 +225,11 @@ export default function Features7() {
         
         .border-dotted {
           border-style: dotted !important;
+        }
+        .quater-batch{
+          border: 1px solid #919191;
+          border-radius: 16px;
+          min-height: 230px;
         }
       `}</style>
     </div>
