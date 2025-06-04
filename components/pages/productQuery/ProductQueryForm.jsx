@@ -22,20 +22,20 @@ export default function productQueryForm({ productId, productName }) {
       message: formData.get("message"),
     };
 
-
     try {
       const response = await submitProductQuery(data);
       console.log("Product query submission response: ", response);
-  
-        toast.success("Thank you for your message! We will get back to you soon.");
-        event.target.reset();
 
-        setTimeout(() => {
-          // Redirect to the home page after a short delay
+      toast.success(
+        "Thank you for your message! We will get back to you soon."
+      );
+      event.target.reset();
 
-        router.push("/"); 
-        }, 2000); // Adjust the delay as needed (2000ms = 2 seconds)
+      setTimeout(() => {
+        // Redirect to the home page after a short delay
 
+        router.push("/");
+      }, 2000); // Adjust the delay as needed (2000ms = 2 seconds)
     } catch (error) {
       console.error("Error submitting product query: ", error);
       toast.error("Failed to submit your query. Please try again later.");
@@ -67,7 +67,7 @@ export default function productQueryForm({ productId, productName }) {
                   <input
                     type="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder="Email (Optional)"
                     required
                   />
                 </div>
@@ -77,7 +77,6 @@ export default function productQueryForm({ productId, productName }) {
                     value={productName || ""}
                     readOnly
                     name="productName"
-            
                     required
                   />
                 </div>
