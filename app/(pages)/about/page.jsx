@@ -10,6 +10,7 @@ import Header9 from "@/components/layout/header/Header9";
 import Banner from "@/components/pages/about/Banner";
 import Hero from "@/components/pages/about/Hero";
 import Information from "@/components/pages/about/Information";
+import OurTeam from "@/components/pages/about/OurTeram";
 import OurVision from "@/components/pages/about/OurVision";
 import Team from "@/components/pages/about/Team";
 import React from "react";
@@ -29,6 +30,7 @@ export default function page() {
         <Banner />
         <FeaturesOne />
         <OurVision />
+        {/* <OurTeam/> */}
         {/* <div className="mt-60">
           <FeturesTwo />
         </div> */}

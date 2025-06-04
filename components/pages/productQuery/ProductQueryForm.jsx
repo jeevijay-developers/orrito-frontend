@@ -2,7 +2,7 @@
 
 import { toast } from "react-toastify";
 
-export default function ContactForm() {
+export default function productQueryForm() {
   const WEB_3_API_KEY = `1c56fd2b-17f0-4b10-9738-fa805a6c6de6`;
 
   async function handleSubmit(event) {
@@ -24,10 +24,13 @@ export default function ContactForm() {
 
     const result = await response.json();
     if (result.success) {
-      console.log(result);
-      toast.success("Thank you for your message! We will get back to you soon.");
-      event.target.reset();
+      console.log("web 3 form res", result);
+      // toast.success("Thank you for your message! We will get back to you soon.");
+      // event.target.reset();
     }
+    try {
+      
+    } catch (error) {}
   }
 
   return (
@@ -38,7 +41,7 @@ export default function ContactForm() {
             <h2 className="text-30 fw-700 text-center mb-30">
               Leave us your info
             </h2>
-            <div className="contactForm">
+            <div className="productQueryForm">
               <form onSubmit={handleSubmit} className="row y-gap-30">
                 <div className="col-md-6">
                   <input type="text" name="name" placeholder="Name" required />
@@ -51,11 +54,19 @@ export default function ContactForm() {
                     required
                   />
                 </div>
-                <div className="col-12">
+                <div className="col-md-6">
                   <input
                     type="email"
                     name="email"
                     placeholder="Email"
+                    required
+                  />
+                </div>
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    name="selectedProduct"
+                    placeholder="Selected Product"
                     required
                   />
                 </div>
