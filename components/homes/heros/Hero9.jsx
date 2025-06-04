@@ -10,7 +10,7 @@ const slidesData = [
   // Define an array of data for each slide
   {
     id: "01",
-    imageSrc: "/img/hero/9/1.jpg",
+    imageSrc: "/img/hero/9/1.png",
     // title: "Iceland's legendary Golden Circle",
     // subtitle: "Starting at $978",
     // text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
@@ -19,7 +19,7 @@ const slidesData = [
   },
   {
     id: "02",
-    imageSrc: "/img/hero/9/1.jpg",
+    imageSrc: "/img/hero/9/2.png",
     // title: "Iceland's legendary Golden Circle",
     // subtitle: "Starting at $978",
     // text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
@@ -28,7 +28,7 @@ const slidesData = [
   },
   {
     id: "03",
-    imageSrc: "/img/hero/9/1.jpg",
+    imageSrc: "/img/hero/9/3.png",
     // title: "Iceland's legendary Golden Circle",
     // subtitle: "Starting at $978",
     // text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
@@ -37,7 +37,7 @@ const slidesData = [
   },
   {
     id: "04",
-    imageSrc: "/img/hero/9/1.jpg",
+    imageSrc: "/img/hero/9/4.png",
     // title: "Iceland's legendary Golden Circle",
     // subtitle: "Starting at $978",
     // text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
@@ -46,7 +46,7 @@ const slidesData = [
   },
   {
     id: "05",
-    imageSrc: "/img/hero/9/1.jpg",
+    imageSrc: "/img/hero/9/6.png",
     // title: "Iceland's legendary Golden Circle",
     // subtitle: "Starting at $978",
     // text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
@@ -205,6 +205,9 @@ export default function Hero9() {
             {`
             .swiper-wrapper{
             height: 45rem;
+            }
+            .hero.-type-9 .hero__bg{
+              padding:0px;
             }
             `}
       </style>
