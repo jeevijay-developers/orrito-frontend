@@ -16,6 +16,7 @@ export default function page() {
       <main>
         <Header9 />
         <Hero/>
+        
         <ProductQueryForm />
         <FooterSeven />
       </main>
