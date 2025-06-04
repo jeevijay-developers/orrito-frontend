@@ -1,36 +1,45 @@
 "use client";
 
+import { submitProductQuery } from "@/service/product_service";
 import { toast } from "react-toastify";
-
-export default function productQueryForm() {
-  const WEB_3_API_KEY = `1c56fd2b-17f0-4b10-9738-fa805a6c6de6`;
+import { useRouter } from "next/navigation";
+export default function productQueryForm({ productId, productName }) {
+  const router = useRouter();
+  console.log("Product ID:", productId);
+  console.log("Product Name:", productName);
 
   async function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
-    formData.append("access_key", WEB_3_API_KEY);
+    formData.append("productId", productId);
 
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      productId: productId,
+      productName: productName,
+      message: formData.get("message"),
+    };
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    });
 
-    const result = await response.json();
-    if (result.success) {
-      console.log("web 3 form res", result);
-      // toast.success("Thank you for your message! We will get back to you soon.");
-      // event.target.reset();
-    }
     try {
-      
-    } catch (error) {}
+      const response = await submitProductQuery(data);
+      console.log("Product query submission response: ", response);
+  
+        toast.success("Thank you for your message! We will get back to you soon.");
+        event.target.reset();
+
+        setTimeout(() => {
+          // Redirect to the home page after a short delay
+
+        router.push("/"); 
+        }, 2000); // Adjust the delay as needed (2000ms = 2 seconds)
+
+    } catch (error) {
+      console.error("Error submitting product query: ", error);
+      toast.error("Failed to submit your query. Please try again later.");
+    }
   }
 
   return (
@@ -65,8 +74,10 @@ export default function productQueryForm() {
                 <div className="col-md-6">
                   <input
                     type="text"
-                    name="selectedProduct"
-                    placeholder="Selected Product"
+                    value={productName || ""}
+                    readOnly
+                    name="productName"
+            
                     required
                   />
                 </div>

@@ -44,3 +44,17 @@ export const getAllCategories = async () => {
         return null;
     }
 }
+export const submitProductQuery = async (data) => {
+    try {
+        const res = await apiClient.post(
+          `${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/query/submit-product-query`,
+          data
+        );
+        console.log('Product query submission response: ', res.data);
+      
+        return res.data;
+    } catch (error) {
+        console.error('Error submitting product query: ', error);
+        throw error;
+    }
+}       

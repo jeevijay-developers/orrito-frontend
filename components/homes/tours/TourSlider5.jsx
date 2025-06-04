@@ -9,17 +9,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { getAllProducts } from "@/service/product_service";
 import { SlEnergy } from "react-icons/sl";
+import { useRouter } from "next/navigation";
 
 export default function TourSlider5() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  const router = useRouter();
   useEffect(() => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
         const res = await getAllProducts();
-        console.log('Fetch featured products data: ', res);
+        console.log("Fetch featured products data: ", res);
 
         if (!res || !res.length) {
           console.error("No data found for products");
@@ -29,7 +30,7 @@ export default function TourSlider5() {
         setProducts(res);
         setLoading(false);
       } catch (error) {
-        console.error('Error fetching products: ', error);
+        console.error("Error fetching products: ", error);
         setProducts([]);
       } finally {
         setLoading(false);
@@ -87,11 +88,11 @@ export default function TourSlider5() {
                           width: "100vw ! important",
                         }}
                       >
-                        <Link
-                          href={`/product/${elm.slug}`}
-                          className="text-decoration-none"
-                        >
-                          <div className="tourCard -type-1 d-block bg-white">
+                        <div className="tourCard -type-1 d-block bg-white">
+                          <Link
+                            href={`/product/${elm.slug}`}
+                            className="text-decoration-none"
+                          >
                             <div className="tourCard__header">
                               <div className="tourCard__image ratio ratio-28:20">
                                 <img
@@ -103,8 +104,12 @@ export default function TourSlider5() {
                                 />
                               </div>
                             </div>
-
-                            <div className="tourCard__content pt-10">
+                          </Link>
+                          <div className="tourCard__content pt-10">
+                            <Link
+                              href={`/product/${elm.slug}`}
+                              className="text-decoration-none"
+                            >
                               <div className="tourCard__location d-flex items-center text-13 text-light-2">
                                 <SlEnergy />
                                 {elm.categoryName}
@@ -113,27 +118,31 @@ export default function TourSlider5() {
                               <h3 className="tourCard__title text-16 fw-500 mt-5">
                                 <span>{elm.name}</span>
                               </h3>
+                            </Link>
+                            <div className="d-flex justify-between items-center border-1-top text-dark-1 pt-10 mt-10">
+                              <div className="d-flex items-center">
+                                <button
+                                  className="send-enquiry-btn"
+                                  onClick={() => {
+                                    router.push(
+                                      `/productquery?productId=${elm._id}&productName=${encodeURIComponent(
+                                        elm.name
+                                      )}`
+                                    );
+                                  }}
+                                >
+                                  Send Enquiry
+                                </button>
+                              </div>
 
-                              <div className="d-flex justify-between items-center border-1-top text-dark-1 pt-10 mt-10">
-                                <div className="d-flex items-center">
-                                  <button className="send-enquiry-btn">
-                                    <div
-                                      href={`/product/${elm._id}`}
-                                      className="no-link-style"
-                                    >
-                                      Send Enquiry
-                                    </div>
-                                  </button>
-
-                                </div>
-
-                                <div className="d-flex items-center text-lg">
-                                  <span className="text-18 fw-600">₹{elm.price}</span>
-                                </div>
+                              <div className="d-flex items-center text-lg">
+                                <span className="text-18 fw-600">
+                                  ₹{elm.price}
+                                </span>
                               </div>
                             </div>
                           </div>
-                        </Link>
+                        </div>
                       </SwiperSlide>
                     ))}
                   </Swiper>
@@ -153,31 +162,35 @@ export default function TourSlider5() {
           </div>
         </div>
         <style jsx>{`
-        .price-tag{
-          display: flex;
-          justify-content: end;
-        }
-        
-        .tourCard__location{
-          column-gap: 2px;       
-        }
+          .price-tag {
+            display: flex;
+            justify-content: end;
+          }
 
-      .send-enquiry-btn {
-        background: linear-gradient(to right, #e6004c 0%, #ff4d00 50%, #ff7b00 100%);
-        font-size: 14px;
-        border: none;
-        color: white;
-        border-radius: 25px;
-        padding: 7px 14px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-      }
+          .tourCard__location {
+            column-gap: 2px;
+          }
 
-      .send-enquiry-btn:hover {
-        background: linear-gradient(to right, #ff7b00, #e6004c)
-      }
-        
-      `}</style>
+          .send-enquiry-btn {
+            background: linear-gradient(
+              to right,
+              #e6004c 0%,
+              #ff4d00 50%,
+              #ff7b00 100%
+            );
+            font-size: 14px;
+            border: none;
+            color: white;
+            border-radius: 25px;
+            padding: 7px 14px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+          }
+
+          .send-enquiry-btn:hover {
+            background: linear-gradient(to right, #ff7b00, #e6004c);
+          }
+        `}</style>
       </section>
     </>
   );
