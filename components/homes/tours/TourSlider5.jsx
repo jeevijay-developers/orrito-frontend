@@ -20,6 +20,7 @@ export default function TourSlider5() {
       try {
         setLoading(true);
         const res = await getAllProducts();
+        // console.log('Fetch featured products data: ', res);
         console.log("Fetch featured products data: ", res);
 
         if (!res || !res.length) {
@@ -112,7 +113,7 @@ export default function TourSlider5() {
                             >
                               <div className="tourCard__location d-flex items-center text-13 text-light-2">
                                 <SlEnergy />
-                                {elm.categoryName}
+                                {elm.categoryName[Math.floor(Math.random() * elm.categoryName.length)] || "General"}
                               </div>
 
                               <h3 className="tourCard__title text-16 fw-500 mt-5">
@@ -162,14 +163,14 @@ export default function TourSlider5() {
           </div>
         </div>
         <style jsx>{`
-          .price-tag {
-            display: flex;
-            justify-content: end;
-          }
-
-          .tourCard__location {
-            column-gap: 2px;
-          }
+        .price-tag{
+          display: flex;
+          justify-content: end;
+        }
+        
+        .tourCard__location{
+          column-gap: 2px;       
+        }
 
           .send-enquiry-btn {
             background: linear-gradient(
