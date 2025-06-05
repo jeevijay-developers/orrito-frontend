@@ -10,7 +10,7 @@ const slidesData = [
   // Define an array of data for each slide
   {
     id: "01",
-    imageSrc: "/img/hero/9/1.png",
+    imageSrc: "/img/hero/9/rs1.jpg",
     // title: "Iceland's legendary Golden Circle",
     // subtitle: "Starting at $978",
     // text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
@@ -19,7 +19,7 @@ const slidesData = [
   },
   {
     id: "02",
-    imageSrc: "/img/hero/9/2.png",
+    imageSrc: "/img/hero/9/rs2.jpg",
     // title: "Iceland's legendary Golden Circle",
     // subtitle: "Starting at $978",
     // text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
@@ -28,7 +28,7 @@ const slidesData = [
   },
   {
     id: "03",
-    imageSrc: "/img/hero/9/3.png",
+    imageSrc: "/img/hero/9/rs3.jpg",
     // title: "Iceland's legendary Golden Circle",
     // subtitle: "Starting at $978",
     // text: "Enjoy a full-day bus tour of Iceland's legendary Golden Circle. Soak in the warm thermal waters of the Secret Lagoon.",
