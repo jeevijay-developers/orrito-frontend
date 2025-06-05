@@ -1,9 +1,10 @@
 "use client";
 
 import { menuData } from "@/data/mobileMenu";
+import { getAllCategories } from "@/service/product_service";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 const socialMediaLinks = [
   { id: 1, class: "icon-facebook", href: "#" },
   { id: 2, class: "icon-twitter", href: "#" },
@@ -13,6 +14,24 @@ const socialMediaLinks = [
 export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
   const [activeSub, setActiveSub] = useState("");
   const pathname = usePathname();
+  const [category, SetCategory] = useState([]);
+  useEffect(() => {
+    getAllCategories()
+      .then((res) => {
+        const formatted = [
+          {
+            label: "Category",
+            submenu: res.map((cat) => ({
+              label: cat.name,
+              href: `/category/${cat.name}`,
+            })),
+          },
+        ];
+        SetCategory(formatted);
+        console.log("Category data: ", res);
+      })
+      .catch((e) => console.log(e));
+  }, []);
   return (
     <div
       data-aos="fade"
@@ -100,7 +119,60 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
                 </ul>
               </li>
             ))}
+            {category.map((elm, i) => (
+              <li key={i} className="menuNav__item -has-submenu js-has-submenu">
+                <a
+                  onClick={() =>
+                    setActiveSub((pre) => (pre == elm.label ? "" : elm.label))
+                  }
+                >
+                  <span
+                    className={
+                      elm.submenu.some(
+                        (elm) => (sub) =>
+                          sub.href.split("/")[2] === pathname?.split("/")[2]
+                      )
+                        ? "activeMenu"
+                        : ""
+                    }
+                  >
+                    {elm.label}
+                  </span>
+                  <i
+                    style={
+                      activeSub == elm.label
+                        ? { transform: "rotate(90deg)", transition: "0.3s" }
+                        : { transform: "rotate(0deg)", transition: "0.3s" }
+                    }
+                    className="icon-chevron-right"
+                  ></i>
+                </a>
 
+                <ul
+                  style={
+                    activeSub == elm.label
+                      ? { maxHeight: "1200px", transition: "0.6s" }
+                      : { maxHeight: "0px", transition: "0.6s" }
+                  }
+                >
+                  {elm.submenu.map((elm2, i2) => (
+                    <li key={i2} className="">
+                      <Link
+                        // className={
+                        //   pathname.split("/")[1] == elm2.href?.split("/")[1]
+                        //     ? "activeMenu"
+                        //     : ""
+                        // }
+                        style={{ paddingLeft: "15px", fontSize: "17px" }}
+                        href={elm2.href}
+                      >
+                        {elm2.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
             <li className="menuNav__item">
               <Link href="/contact">Contact</Link>
             </li>
@@ -112,7 +184,7 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
 
           <div className="text-20 lh-12 fw-500 mt-20">
             <div>Speak to our expert at</div>
-            <div className="text-accent-1">9993971796</div>
+            <div className="text-accent-1">1800 889 4722</div>
           </div>
 
           <div className="d-flex items-center x-gap-10 pt-30">

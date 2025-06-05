@@ -2634,8 +2634,17 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   pointer-events: none;
   transition: .2s;
-}
 
+}
+.navOverFlowScroll{
+  max-height: 300px;
+  overflow-y: auto;
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* Internet Explorer and Edge */
+}
+.navOverFlowScroll::-webkit-scrollbar {
+  display: none;                  /* Webkit (Chrome, Safari) */
+}
 .header .desktopNav .desktopNavSubnav__content {
   border-radius: 12px;
   background-color: white;

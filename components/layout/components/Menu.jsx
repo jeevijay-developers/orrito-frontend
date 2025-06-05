@@ -1,13 +1,24 @@
 "use client";
 
-import { category, homes, pages, tours } from "@/data/menu";
+import {  homes, pages, tours } from "@/data/menu"; //category,
+import { getAllCategories } from "@/service/product_service";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Menu() {
+  const [category, SetCategory] = useState([]);
   const pathname = usePathname();
+  useEffect(() => {
+    getAllCategories()
+      .then((res) => {
+        SetCategory(res);
+        // console.log("Category data: ", res);
+      })
+      .catch((e) => console.log(e));
+  }, []);                                                                                                                                                                                                                                                                                                                                                                             
+  // console.log("Category 2 data: ", category);
   return (
     <>
       <div className="xl:d-none ml-30">
@@ -36,15 +47,15 @@ export default function Menu() {
               Category <i className="icon-chevron-down"></i>
             </a>
 
-            <div className="desktopNavSubnav">
+            <div className="desktopNavSubnav navOverFlowScroll">
               <div className="desktopNavSubnav__content">
                 {category.map((elm, i) => (
                   <div key={i} className="desktopNavSubnav__item text-dark-1">
                     <Link
-                      className={pathname == elm.href ? "activeMenu" : ""}
-                      href={elm.href}
+                      className={pathname == elm.name ? "activeMenu" : ""}
+                      href={`/category/${elm.name}`}
                     >
-                      {elm.title}
+                      {elm.name}
                     </Link>
                   </div>
                 ))}
