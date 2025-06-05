@@ -122,19 +122,20 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
             {category.map((elm, i) => (
               <li key={i} className="menuNav__item -has-submenu js-has-submenu">
                 <a
+            
                   onClick={() =>
                     setActiveSub((pre) => (pre == elm.label ? "" : elm.label))
                   }
                 >
                   <span
-                    className={
-                      elm.submenu.some(
-                        (elm) => (sub) =>
-                          sub.href.split("/")[2] === pathname?.split("/")[2]
-                      )
-                        ? "activeMenu"
-                        : ""
-                    }
+                    // className={
+                    //   elm.submenu.some(
+                    //     (elm) => (sub) =>
+                    //       sub.href.split("/")[2] === pathname?.split("/")[2]
+                    //   )
+                    //     ? "activeMenu"
+                    //     : ""
+                    // }
                   >
                     {elm.label}
                   </span>
@@ -159,7 +160,11 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
                     <li key={i2} className="">
                       <Link
                         // className={
-                        //   pathname.split("/")[1] == elm2.href?.split("/")[1]
+                        //   elm.submenu.some(
+                        //     (elm) =>
+                        //       decodeURIComponent(elm.href.split("/")[2]) ===
+                        //       decodeURIComponent(pathname?.split("/")[2] || "")
+                        //   )
                         //     ? "activeMenu"
                         //     : ""
                         // }
