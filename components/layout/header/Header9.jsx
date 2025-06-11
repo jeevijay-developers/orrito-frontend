@@ -37,7 +37,9 @@ export default function Header9() {
   return (
     <>
       <header
-        className={`header -type-10 js-header -is-sticky `} //${addClass ? "-is-sticky" : ""}
+        className={`header -type-10 js-header  ${
+          addClass ? "-is-sticky" : ""
+        }`} //${addClass ? "-is-sticky" : ""}
       >
         <div className="header__container">
           <div className="headerMobile__left">
