@@ -89,7 +89,7 @@ export default function Hero9() {
       >
         <div className="swiper-wrapper">
           <div className="swiper-wrapper">
-            <Swiper
+            {/* <Swiper
               className="w-100"
               modules={[Navigation]}
               onSwiper={(swiper) => {
@@ -125,66 +125,34 @@ export default function Hero9() {
                   <div className="container">
                     <div className="hero__content">
                       <div className="row items-center justify-between">
-                        {/* <div className="col-xl-7 col-lg-8">
-                          <div
-                            data-aos="fade-up"
-                            data-aos-delay="100"
-                            className="hero__subtitle text-18 fw-500 text-white mb-10"
-                          >
-                            {elm.subtitle}
-                          </div>
-
-                          <h1
-                            data-aos="fade-up"
-                            data-aos-delay="150"
-                            className="hero__title text-white"
-                          >
-                            {elm.title.split(" ").slice(0, 2).join(" ")}
-                            <br className="lg:d-none" />
-                            {elm.title.split(" ").slice(2).join(" ")}
-                          </h1>
-
-                          <div
-                            data-aos="fade-up"
-                            data-aos-delay="300"
-                            className="hero__text text-white mt-10"
-                          >
-                            {elm.text.split(" ").slice(0, 10).join(" ")}
-                            <br className="lg:d-none" />
-                            {elm.text.split(" ").slice(10).join(" ")}
-                          </div>
-
-                          <Link
-                            href={"/tour-list-1"}
-                            className="hero__button mt-30"
-                          >
-                            <button className="button -md -outline-white text-white">
-                              View Tour
-                              <i className="icon-arrow-top-right ml-10"></i>
-                            </button>
-                          </Link>
-                        </div> */}
-
-                        {/* <div className="col-lg-4">
-                          <div className="hero__image">
-                            <Image
-                              width="437"
-                              height="177"
-                              src={elm.imageSvgSrc}
-                              alt="image"
-                            />
-                          </div>
-                        </div> */}
                       </div>
                     </div>
                   </div>
                 </SwiperSlide>
               ))}
-            </Swiper>
+            </Swiper> */}
+            <div className="w-100">
+              <div className="hero__bg">
+                <Image
+                  width={1860}
+                  height={900}
+                  quality={100}
+                  src="/img/hero/9/rs1.jpg"
+                  alt="background"
+                />
+                {/* <Image
+                  width={1860}
+                  height={40}
+                  style={{ height: "auto" }}
+                  src="/img/hero/1/shape.svg"
+                  alt="image"
+                /> */}
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="container -pagination">
+        {/* <div className="container -pagination">
           <div className="hero__pagination js-main-slider-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
             {slidesData.map((elm, i) => (
               <span
@@ -199,17 +167,17 @@ export default function Hero9() {
               </span>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
       <style jsx>
-            {`
-            .swiper-wrapper{
-            height: 45rem;
-            }
-            .hero.-type-9 .hero__bg{
-              padding:0px;
-            }
-            `}
+        {`
+          .swiper-wrapper {
+            height: 40rem;
+          }
+          .hero.-type-9 .hero__bg {
+            padding: 0px;
+          }
+        `}
       </style>
     </section>
   );

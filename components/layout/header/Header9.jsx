@@ -56,7 +56,7 @@ export default function Header9() {
               <Image
                 width="120"
                 height="25"
-                src="/img/general/oritto.png"
+                src="/img/general/logo.png"
                 alt="logo icon"
               />
             </Link>
